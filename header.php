@@ -115,7 +115,7 @@
                                 <?php
                                     
                                     // Create connection
-                                    $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname, $dbport);
+                                    $conn = $conn = mysqli_connect($servername, $username, $password, $dbname, $dbport);;
                                     // Check connection
                                     if (!$conn) {
                                         die("Connection failed: " . mysqli_connect_error());
@@ -296,7 +296,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="researchAreas.php">Research Areas</a></li>
 							<li><a href="fundedProjects.php">Funded Projects</a></li>
-							<li><a href="">Research Scholars</a></li>
+							<li><a href="researchScholar.php">Research Scholars</a></li>
 							<li><a href="researchPublications.php">Publications</a></li>
 							<li><a href="ordinancePhD.php">PhD Ordinance</a></li>
 							<li><a href="/assets/docs/Ac_Cal_2016.pdf">Academic Calendar</a></li>
@@ -328,7 +328,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="facultyPage.php">Faculty</a></li>
-							<li><a href="blog_masonry_3col.html">Research Scholars</a></li>
+							<li><a href="researchScholar.php">Research Scholars</a></li>
 							<li><a href="students.php">Students</a></li>
 							<li><a href="blog_timeline.html">Staff</a></li>
 						</ul>

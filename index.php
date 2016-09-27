@@ -110,7 +110,7 @@
                             include($path);
 
                             // Create connection
-                            $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname, $dbport);
+                            $conn = mysqli_connect($servername, $username, $password, $dbname, $dbport);
                             // Check connection
                             if (!$conn) {
                                 die("Connection failed: " . mysqli_connect_error());
@@ -150,7 +150,7 @@
                             include($path);
 
                             // Create connection
-                            $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname, $dbport);
+                            $conn = $conn = mysqli_connect($servername, $username, $password, $dbname, $dbport);
                             // Check connection
                             if (!$conn) {
                                 die("Connection failed: " . mysqli_connect_error());
@@ -190,7 +190,7 @@
                             include($path);
 
                             // Create connection
-                            $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname, $dbport);
+                            $conn = $conn = mysqli_connect($servername, $username, $password, $dbname, $dbport);
                             // Check connection
                             if (!$conn) {
                                 die("Connection failed: " . mysqli_connect_error());
